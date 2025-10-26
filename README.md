@@ -24,9 +24,18 @@ git branch -a
 * main
 remotes/origin/main
 
-# 创建 branch dev
+# 创建 branch dev, 并切换
 git checkout -b dev
 git switch -c dev
+
+# 切换到 dev branch
+git checkout dev
+git switch dev
+
+# 删除分支 dev
+git branch -d dev
+# 强制删除（本地有未合并的变更）
+git branch -D dev
 
 # 查看当前 branch 详细信息(和远端关联)
 git branch -vv
