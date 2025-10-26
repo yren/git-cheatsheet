@@ -47,6 +47,8 @@ git branch -vv
 git branch -m dev2
 # 当前分支强制命名为 dev2 (如果原来有 dev2 分支会被替换)
 git branch -M dev2
+
+git branch -m old_brname new_brname
 ```
 
 ## github 初始化项目
