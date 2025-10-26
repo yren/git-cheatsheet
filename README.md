@@ -24,9 +24,12 @@ git branch -a
 * main
 remotes/origin/main
 
-# 创建 branch dev, 并切换
+# 创建 branch dev, 并切换 (基于当前分支创建)
 git checkout -b dev
 git switch -c dev
+# 创建 branch dev, 并切换 (基于 main 分支创建)
+git checkout -b dev main
+git switch -c dev main
 
 # 切换到 dev branch
 git checkout dev
@@ -39,6 +42,11 @@ git branch -D dev
 
 # 查看当前 branch 详细信息(和远端关联)
 git branch -vv
+
+# 将当前分支重命名为 dev2
+git branch -m dev2
+# 当前分支强制命名为 dev2 (如果原来有 dev2 分支会被替换)
+git branch -M dev2
 ```
 
 ## github 初始化项目
